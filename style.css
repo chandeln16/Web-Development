@@ -1,107 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: 'Montserrat', sans-serif;
-    font-size:10px ;
-}
-
-a{
-    text-decoration: none;
-}
-
-.container {
-    min-height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-}
-
-#one {
-    background-image: url(pexels-pixelcop-2680270.jpg);
-    background-size: cover;
-    background-position: top center;
-    z-index: 1;
-}
-
-#one h1 {
-    display:block;
-    width: fit-content;
-    font-size: 4rem;
-    position: relative;
-    color: black;
-
-    align-items: center;
-    justify-content: center;
-    animation: text_reveal .5s forwards;
-    animation-delay: 1.5s;
-}
-
-#one h1:nth-child(1){
-    animation-delay: 1.5s;
-}
-#one h1:nth-child(2){
-    animation-delay: 2.5s;
-}
-#one h1:nth-child(3){
-    animation-delay: 3.5s;
-}
-#one h1 span{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(60, 50, 99);
-    animation: text_reveal_box 1s ease;
-    animation-delay: 1s;
-}
-
-#one h1:nth-child(1) span{
-    animation-delay: 1s;
-}
-#one h1:nth-child(2) span{
-    animation-delay: 2s;
-}
-#one h1:nth-child(3) span{
-    animation-delay: 3s;}
-
-#one .cta {
-    display: inline-block;
-    padding:10px  30px;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    border: 2px solid black;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-    transition: 0.3s ease;
-    transition-property:background-color, color;
-}
-
-#one .cta:hover{
-    color: white;
-    background-color: black;
-}
-
-@keyframes text_reveal_box{
-    50%{width: 100%;
-        left: 0%;
-}
-    100%{
-        width: 0%;
-        height: 100%;
-    }
-}
-
-@keyframes text_reveal{
-    100%{
-        color: black;
-    }
+#clock-edge {
+position: relative;
+width: 500px;
+max-width: 500px;
+max-height: 500px;
+height: 500px;
+border-radius: 50%;
+border: 5px solid #000;
+display: inline-flex;
+justify-content: center;
+align-items: center;
 }
